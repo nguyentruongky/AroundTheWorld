@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		428B353D1BB50065005199FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B353C1BB50065005199FD /* AppDelegate.swift */; };
-		428B353F1BB50065005199FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B353E1BB50065005199FD /* ViewController.swift */; };
 		428B35421BB50065005199FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428B35401BB50065005199FD /* Main.storyboard */; };
 		428B35451BB50065005199FD /* AroundTheWorld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 428B35431BB50065005199FD /* AroundTheWorld.xcdatamodeld */; };
 		428B35471BB50065005199FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428B35461BB50065005199FD /* Assets.xcassets */; };
 		428B354A1BB50065005199FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428B35481BB50065005199FD /* LaunchScreen.storyboard */; };
 		428B35551BB50065005199FD /* AroundTheWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B35541BB50065005199FD /* AroundTheWorldTests.swift */; };
 		428B35601BB50065005199FD /* AroundTheWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B355F1BB50065005199FD /* AroundTheWorldUITests.swift */; };
+		42AF2CA51BB59CF500AE7664 /* CountryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF2CA41BB59CF500AE7664 /* CountryListController.swift */; settings = {ASSET_TAGS = (); }; };
+		42AF2CA71BB59D1200AE7664 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF2CA61BB59D1200AE7664 /* Country.swift */; settings = {ASSET_TAGS = (); }; };
+		42AF2CAB1BB59E2800AE7664 /* CountryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF2CAA1BB59E2800AE7664 /* CountryDetailController.swift */; settings = {ASSET_TAGS = (); }; };
+		42AF2CAD1BB59F0C00AE7664 /* ApiWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF2CAC1BB59F0C00AE7664 /* ApiWorking.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		428B35391BB50065005199FD /* AroundTheWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundTheWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		428B353C1BB50065005199FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		428B353E1BB50065005199FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		428B35411BB50065005199FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		428B35441BB50065005199FD /* AroundTheWorld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AroundTheWorld.xcdatamodel; sourceTree = "<group>"; };
 		428B35461BB50065005199FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		428B355B1BB50065005199FD /* AroundTheWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AroundTheWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		428B355F1BB50065005199FD /* AroundTheWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundTheWorldUITests.swift; sourceTree = "<group>"; };
 		428B35611BB50065005199FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AF2CA41BB59CF500AE7664 /* CountryListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryListController.swift; sourceTree = "<group>"; };
+		42AF2CA61BB59D1200AE7664 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		42AF2CAA1BB59E2800AE7664 /* CountryDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailController.swift; sourceTree = "<group>"; };
+		42AF2CAC1BB59F0C00AE7664 /* ApiWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiWorking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,11 @@
 		428B353B1BB50065005199FD /* AroundTheWorld */ = {
 			isa = PBXGroup;
 			children = (
-				428B353C1BB50065005199FD /* AppDelegate.swift */,
-				428B353E1BB50065005199FD /* ViewController.swift */,
-				428B35401BB50065005199FD /* Main.storyboard */,
-				428B35461BB50065005199FD /* Assets.xcassets */,
-				428B35481BB50065005199FD /* LaunchScreen.storyboard */,
-				428B354B1BB50065005199FD /* Info.plist */,
-				428B35431BB50065005199FD /* AroundTheWorld.xcdatamodeld */,
+				42AF2CA31BB5958C00AE7664 /* Model */,
+				42AF2C9F1BB5956B00AE7664 /* View */,
+				42AF2CA01BB5957000AE7664 /* Controller */,
+				42AF2CA21BB5958700AE7664 /* Others */,
+				42AF2CA11BB5957F00AE7664 /* Resources */,
 			);
 			path = AroundTheWorld;
 			sourceTree = "<group>";
@@ -126,6 +130,51 @@
 				428B35611BB50065005199FD /* Info.plist */,
 			);
 			path = AroundTheWorldUITests;
+			sourceTree = "<group>";
+		};
+		42AF2C9F1BB5956B00AE7664 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				428B35401BB50065005199FD /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		42AF2CA01BB5957000AE7664 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42AF2CA41BB59CF500AE7664 /* CountryListController.swift */,
+				42AF2CAA1BB59E2800AE7664 /* CountryDetailController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		42AF2CA11BB5957F00AE7664 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				428B35461BB50065005199FD /* Assets.xcassets */,
+				428B35481BB50065005199FD /* LaunchScreen.storyboard */,
+				428B354B1BB50065005199FD /* Info.plist */,
+				428B35431BB50065005199FD /* AroundTheWorld.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		42AF2CA21BB5958700AE7664 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				428B353C1BB50065005199FD /* AppDelegate.swift */,
+				42AF2CAC1BB59F0C00AE7664 /* ApiWorking.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		42AF2CA31BB5958C00AE7664 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42AF2CA61BB59D1200AE7664 /* Country.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428B353F1BB50065005199FD /* ViewController.swift in Sources */,
+				42AF2CAB1BB59E2800AE7664 /* CountryDetailController.swift in Sources */,
+				42AF2CA71BB59D1200AE7664 /* Country.swift in Sources */,
 				428B35451BB50065005199FD /* AroundTheWorld.xcdatamodeld in Sources */,
 				428B353D1BB50065005199FD /* AppDelegate.swift in Sources */,
+				42AF2CAD1BB59F0C00AE7664 /* ApiWorking.swift in Sources */,
+				42AF2CA51BB59CF500AE7664 /* CountryListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +540,7 @@
 				428B35661BB50065005199FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		428B35671BB50065005199FD /* Build configuration list for PBXNativeTarget "AroundTheWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +549,7 @@
 				428B35691BB50065005199FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		428B356A1BB50065005199FD /* Build configuration list for PBXNativeTarget "AroundTheWorldUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +558,7 @@
 				428B356C1BB50065005199FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
