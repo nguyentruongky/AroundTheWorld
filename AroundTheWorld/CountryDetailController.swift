@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CountryDetailController: UITableViewController, UISearchBarDelegate {
+class CountryDetailController: UITableViewController {
 
     var country: Country?
     
@@ -31,7 +31,6 @@ class CountryDetailController: UITableViewController, UISearchBarDelegate {
         capital.text = country?.capital
         subRegion.text = country?.subRegion
 
-//        area.text = "\(country!.area!) km2"
         area.text = "\(formatNumber((country!.area!))) km2"
         population.text = formatNumber(country!.population!)
         
@@ -51,12 +50,7 @@ class CountryDetailController: UITableViewController, UISearchBarDelegate {
 
     }
 
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        dispatch_async(dispatch_get_main_queue()) { () -> Void in
-            
-        }
-    }
+  
     
     
     
